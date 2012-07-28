@@ -10,4 +10,6 @@
 
 @interface KinCentralViewController : UIViewController
 
+- (void)wellcomeView;
+
 @end

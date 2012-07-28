@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F29543A15C3EE56000A6A0D /* WellcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29543915C3EE56000A6A0D /* WellcomeViewController.m */; };
+		3F29543B15C3EE56000A6A0D /* WellcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29543915C3EE56000A6A0D /* WellcomeViewController.m */; };
+		3F29544715C41992000A6A0D /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29544615C41992000A6A0D /* AccountViewController.m */; };
+		3F29544815C41992000A6A0D /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29544615C41992000A6A0D /* AccountViewController.m */; };
 		3F5361F715BBFCA2008AC1BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5361F615BBFCA2008AC1BC /* UIKit.framework */; };
 		3F5361F915BBFCA2008AC1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5361F815BBFCA2008AC1BC /* Foundation.framework */; };
 		3F5361FB15BBFCA2008AC1BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5361FA15BBFCA2008AC1BC /* CoreGraphics.framework */; };
@@ -193,6 +197,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F29543815C3EE56000A6A0D /* WellcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellcomeViewController.h; sourceTree = "<group>"; };
+		3F29543915C3EE56000A6A0D /* WellcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellcomeViewController.m; sourceTree = "<group>"; };
+		3F29544515C41992000A6A0D /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		3F29544615C41992000A6A0D /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		3F5361F215BBFCA2008AC1BC /* KinCentral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinCentral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5361F615BBFCA2008AC1BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F5361F815BBFCA2008AC1BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -356,6 +364,10 @@
 				3F53620615BBFCA2008AC1BC /* KinCentralAppDelegate.m */,
 				3F53620815BBFCA2008AC1BC /* KinCentralViewController.h */,
 				3F53620915BBFCA2008AC1BC /* KinCentralViewController.m */,
+				3F29543815C3EE56000A6A0D /* WellcomeViewController.h */,
+				3F29543915C3EE56000A6A0D /* WellcomeViewController.m */,
+				3F29544515C41992000A6A0D /* AccountViewController.h */,
+				3F29544615C41992000A6A0D /* AccountViewController.m */,
 				3F53620B15BBFCA2008AC1BC /* KinCentralViewController.xib */,
 				3F5361FD15BBFCA2008AC1BC /* Supporting Files */,
 			);
@@ -748,6 +760,8 @@
 				3F53620315BBFCA2008AC1BC /* main.m in Sources */,
 				3F53620715BBFCA2008AC1BC /* KinCentralAppDelegate.m in Sources */,
 				3F53620A15BBFCA2008AC1BC /* KinCentralViewController.m in Sources */,
+				3F29543A15C3EE56000A6A0D /* WellcomeViewController.m in Sources */,
+				3F29544715C41992000A6A0D /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +770,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F53622215BBFCA2008AC1BC /* KinCentralTests.m in Sources */,
+				3F29543B15C3EE56000A6A0D /* WellcomeViewController.m in Sources */,
+				3F29544815C41992000A6A0D /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,6 +931,7 @@
 				3F53622715BBFCA2008AC1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F53622815BBFCA2008AC1BC /* Build configuration list for PBXNativeTarget "KinCentralTests" */ = {
 			isa = XCConfigurationList;
@@ -923,6 +940,7 @@
 				3F53622A15BBFCA2008AC1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

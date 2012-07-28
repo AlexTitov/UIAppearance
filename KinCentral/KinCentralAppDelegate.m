@@ -22,6 +22,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setTintColor:[UIColor cyanColor]];
+    
+    //[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"logo_navBar.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    //[[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"Back.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
     KinCentralViewController *root = [KinCentralViewController new];
