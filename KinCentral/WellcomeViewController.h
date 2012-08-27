@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WellcomeViewController : UIViewController
+@interface WellcomeViewController : UIViewController <UITextFieldDelegate>
 
 - (void)back;
 - (void)saveAccount;

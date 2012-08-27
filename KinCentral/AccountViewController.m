@@ -39,36 +39,36 @@
     
     UITextField *emailField = [[UITextField alloc] initWithFrame:CGRectMake(34, 120, 232, 22)];
     emailField.borderStyle = UITextBorderStyleRoundedRect;
-    emailField.textColor = [UIColor grayColor];
     emailField.font = [UIFont systemFontOfSize:13];
-    emailField.text = @"Email Address";
+    emailField.placeholder = @"Email Address";
+    emailField.delegate = self;
     
     UITextField *firstField = [[UITextField alloc] initWithFrame:CGRectMake(34, 160, 232, 22)];
     firstField.borderStyle = UITextBorderStyleRoundedRect;
-    firstField.textColor = [UIColor grayColor];
     firstField.font = [UIFont systemFontOfSize:13];
-    firstField.text = @"First Name";
+    firstField.placeholder = @"First Name";
+    firstField.delegate = self;
     
     UITextField *lastField = [[UITextField alloc] initWithFrame:CGRectMake(34, 200, 232, 22)];
     lastField.borderStyle = UITextBorderStyleRoundedRect;
-    lastField.textColor = [UIColor grayColor];
     lastField.font = [UIFont systemFontOfSize:13];
-    lastField.text = @"Last Name";
+    lastField.placeholder = @"Last Name";
+    lastField.delegate = self;
     
     UITextField *phoneField = [[UITextField alloc] initWithFrame:CGRectMake(34, 240, 232, 22)];
     phoneField.borderStyle = UITextBorderStyleRoundedRect;
-    phoneField.textColor = [UIColor grayColor];
     phoneField.font = [UIFont systemFontOfSize:13];
-    phoneField.text = @"Phone Number (optional)";
+    phoneField.placeholder = @"Phone Number (optional)";
+    phoneField.delegate = self;
     
     UIView *soView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"so_your_family_text.png"]];
     soView.frame = CGRectMake(40, 268, 173, 9);
     
     UITextField *passwordField = [[UITextField alloc] initWithFrame:CGRectMake(34, 290, 232, 22)];
     passwordField.borderStyle = UITextBorderStyleRoundedRect;
-    passwordField.textColor = [UIColor grayColor];
     passwordField.font = [UIFont systemFontOfSize:13];
-    passwordField.text = @"Password";
+    passwordField.placeholder = @"Password";
+    passwordField.delegate = self;
     
     UIView *pictureView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"picture_text.png"]];
     pictureView.frame = CGRectMake(40, 334, 43, 9);
@@ -97,6 +97,13 @@
 - (void)back
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 @end

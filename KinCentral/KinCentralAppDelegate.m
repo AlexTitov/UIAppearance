@@ -22,7 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UINavigationBar appearance] setTintColor:[UIColor cyanColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:92.0/255.0 green:177.0/255.0 blue:204.0/255.0 alpha:1.0]];
     
     //[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"logo_navBar.png"] forBarMetrics:UIBarMetricsDefault];
     
@@ -41,6 +41,13 @@
     [navController release];
     
     [self.window makeKeyAndVisible];
+    
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
     
     return YES;
 }

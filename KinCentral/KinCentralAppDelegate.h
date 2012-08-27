@@ -10,7 +10,7 @@
 
 @class KinCentralViewController;
 
-@interface KinCentralAppDelegate : UIResponder <UIApplicationDelegate>
+@interface KinCentralAppDelegate : UIResponder <UIApplicationDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

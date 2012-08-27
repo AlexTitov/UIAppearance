@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AccountViewController : UIViewController
+@interface AccountViewController : UIViewController <UITextFieldDelegate>
 
 - (void)back;
 

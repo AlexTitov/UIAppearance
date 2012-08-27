@@ -40,15 +40,15 @@
     
     UITextField *emailField = [[UITextField alloc] initWithFrame:CGRectMake(33, 80, 234, 22)];
     emailField.borderStyle = UITextBorderStyleRoundedRect;
-    emailField.textColor = [UIColor grayColor];
     emailField.font = [UIFont systemFontOfSize:13];
-    emailField.text = @"Email Address";
+    emailField.placeholder = @"Email Address";
+    emailField.delegate = self;
     
     UITextField *passwordField = [[UITextField alloc] initWithFrame:CGRectMake(33, 110, 234, 22)];
     passwordField.borderStyle = UITextBorderStyleRoundedRect;
-    passwordField.textColor = [UIColor grayColor];
     passwordField.font = [UIFont systemFontOfSize:13];
-    passwordField.text = @"Password";
+    passwordField.placeholder = @"Password";
+    passwordField.delegate = self;
     
     UIButton *loginButton = [[UIButton alloc] initWithFrame:CGRectMake(33, 140, 234, 35)];
     [loginButton setBackgroundImage:[UIImage imageNamed:@"login_but.png"] forState:UIControlStateNormal];
@@ -86,6 +86,13 @@
     [self.navigationController pushViewController:accountViewController animated:YES];
     
     [accountViewController release];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 @end
